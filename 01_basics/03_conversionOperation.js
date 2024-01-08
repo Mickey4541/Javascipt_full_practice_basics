@@ -24,7 +24,29 @@ console.log(booleanIsLoggedIn);
 
 
 let someNumber = 33
-let stringNumber = string(someNumber)
-console.log(stringNumber);
-console.log(typeof stringNumber); //to check if it is converted or not
+//let stringNumber = string(someNumber)
+//console.log(stringNumber);
+//console.log(typeof stringNumber); //to check if it is converted or not
 
+
+//*****************Operations********************
+let value = 3
+let negativeValue = -value
+console.log(negativeValue);
+
+
+console.log(2**3)//two to the power 3
+
+
+
+let str1 = "Hello"
+let str2 = " Rajan"
+let str3 = str1 + str2
+console.log(str3)  //string concatenate
+
+
+console.log("1" + 2)//12
+console.log(2 + "1")//21
+console.log("1" + "2")//12
+console.log("1" + 2 + 2)//122
+console.log(1 + 2 + "3")//33
