@@ -11,7 +11,7 @@ const score = 100 // number define
 const scoreValue = 100.3 //number define
 
 
-const isLoggedIn = False // Boolean define
+const isLoggedIn = false // Boolean define
 const outsideTemp = null  // null define
 
 let userEmail; //undefined 
