@@ -2,7 +2,8 @@
 There are two types of memory : Stack and Heap.
 Stack is used in Primitive and HEap is used in Non-primitive.
 Whenever we use stack, we get the copy of declared variable.
-Whenever we use heap memory, we get reference of original value means whatever the changes made is seen in the original value.
+Whenever we use heap memory, we get reference of original
+value means whatever the changes made is seen in the original value.
 
 */
 //stack
