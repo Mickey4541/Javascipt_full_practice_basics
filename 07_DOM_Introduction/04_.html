@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+        ///adding language in un-optimized way/////////////////////
+    function addLanguage(lang_name){
+    const li =  document.createElement('Li')
+        li.innerHTML = `${lang_name}`
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addLanguage("Python")
+    addLanguage("typescript")
+
+    ///adding language in optimized way/////////////////////
+    function addOptimizedLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptimizedLanguage("Rajan")
+
+    //Editing those added values/////////////////////////////
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Python is awesome"//not optimized
+    const newli = document.createElement('li')
+    newli.textContent = "Python is very Awesome";
+    secondLang.replaceWith(newli);
+
+    //changing first language with other method
+    const firstLang = document.querySelector("li:nth-child(1)")
+    firstLang.outerHTML = '<li>THis is first lang javascript.</li>'
+
+    ///////////////////////////////////Removing the languages//////////
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove();
+</script>
+</html>
