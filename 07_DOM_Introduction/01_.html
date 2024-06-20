@@ -99,7 +99,28 @@ document.querySelectorAll("h2")
 document.querySelector('input[type = "password"]')
 // <input type="password" name id>
 
+//nodelist  /  html collection  /  array => sabai farak hun
+//to convert html collection to array => Array.from(htmlcollection_name)
 
+//to convert nodelist to array:
+var nodeList = document.querySelectorAll('selector'); // Example selector
+var nodeArray = Array.from(nodeList);
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// to convert html collection to array::
+ // Method 1: Using Array.prototype.slice.call()
+ var array1 = Array.prototype.slice.call(htmlCollection);
+        console.log('Array 1:', array1);
 
+        // Method 2: Using Array.from()
+        var array2 = Array.from(htmlCollection);
+        console.log('Array 2:', array2);
+
+        // Method 3: Using spread operator
+        var array3 = [...htmlCollection];
+        console.log('Array 3:', array3);
 </script>
 </html>
