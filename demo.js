@@ -10,4 +10,6 @@ function myFunction(item){
 
 myFunction(myArray);
 
-// defines an array myArray and a function myFunction that takes an array as an argument and calculates the sum of its elements using the reduce method. 
+// defines an array myArray and a function myFunction that 
+// takes an array as an argument and calculates the sum of its 
+// elements using the reduce method. 
