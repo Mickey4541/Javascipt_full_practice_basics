@@ -39,7 +39,7 @@ function validateGuess(guess){
     }else if(guess > 100){
         alert('Please enter a valid number between 1 and 100');
     }else{
-        prevguess.push(guess);
+        prevguess.push(guess);//guess garako lai array maa rakhera user lai display gardini.
 
         if(numGuess === 11){
             displayGuess(guess)
@@ -51,8 +51,6 @@ function validateGuess(guess){
         }
     }
 }
-
-
 
 
 //checking and printing that the guess is valid or not.
@@ -68,8 +66,6 @@ function checkGuess(guess){
 }
 
 
-
-
 //cleanup method or cleanup guess
 function displayGuess(guess){
     userInput.value = ''
@@ -78,8 +74,6 @@ function displayGuess(guess){
     remaining.innerHTML = `${11 - numGuess}`
 
 }
-
-
 
 
 
