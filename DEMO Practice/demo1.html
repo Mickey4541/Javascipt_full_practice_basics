@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: #ff004f;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .left_box{
+            height: 30vh;
+            width: 30vw;
+            background-color: cyan;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        .right_box{
+            height: 30vh;
+            width: 30vw;
+            background-color: magenta;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left_box">Hello Left</div>
+        <div class="right_box">Hello Right</div>
+    </div>
+</body>
+<script>
+    const leftBox = document.querySelector('.left_box');
+    const rightBox = document.querySelector('.right_box');
+    const container = document.querySelector('.container');
+    
+    leftBox.addEventListener('click', function(){
+        container.style.backgroundColor = "blue";
+        leftBox.style.scale = 1.2;
+        rightBox.style.scale = 1;
+    });
+    rightBox.addEventListener('click', function(){
+        container.style.backgroundColor = "plum";
+        rightBox.style.scale = 1.2;
+        leftBox.style.scale = 1;
+    });
+</script>
+</html>

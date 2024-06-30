@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = "open">Open</button>
+    <dialog id = "dialog">Hey, rajan !! How are you ? What's going on ??</dialog>
+</body>
+<script>
+    const dialog = document.getElementById('dialog');
+    const open = document.getElementById('open')
+    open.addEventListener('click', () => {
+        dialog.showModal();
+    })
+</script>
+</html>
