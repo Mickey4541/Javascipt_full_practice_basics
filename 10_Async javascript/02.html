@@ -17,16 +17,16 @@
     const sayRajan = function(){
         console.log('rajan');
     }
-    setTimeout(sayRajan, 2000)
+    setTimeout(sayRajan, 2000) //here, sayRajan is a reference.
 //.............................................
 const changeText = function(){
     document.querySelector('h1').innerHTML = "Best Js Series";
 }
 const changeMe = setTimeout(changeText,2000);
 document.querySelector('#stop').addEventListener('click', function(){
-    clearTimeout(changeMe)
+    clearTimeout(changeMe)//clear timeout ley changeme reference liyo.
     console.log("Stopped....!!");
 })
 //.............................................
 </script>
-</html>
+</html> 
