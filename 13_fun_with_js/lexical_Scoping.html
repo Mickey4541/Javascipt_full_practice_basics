@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function init(){
+        let name = "mozilla";
+        function displayName(){
+            console.log(name);
+        }
+        displayName();
+    }
+    init();
+
+//here inner function can access outer function variable.
+
+    function outer(){
+        let username = "rajan"
+        console.log(secret);//not accessible
+        
+        function inner(){
+            let secret = "123456"
+            console.log("Inner", username);
+            
+        }
+        function innerone(){
+            console.log("Inner", username);
+            console.log(secret);//not accessible
+            
+        }
+        inner();
+        innerone();
+    }
+    outer();
+    console.log("Too outer", username);//not accessible
+    
+    
+</script>
+</html>
